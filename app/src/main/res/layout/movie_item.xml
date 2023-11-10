@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="main"
+            type="com.example.c323p8moviesearch.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:background="#83CABF">
+
+
+            <ImageButton
+                android:id="@+id/bShare"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="#83CABF"
+                android:src="@drawable/share"/>
+
+            <ImageButton
+                android:id="@+id/bFeedback"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="#83CABF"
+                android:src="@drawable/feedback" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/etMSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:hint="Search Movie"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/bSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:text="Search"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#938D8D"
+                android:backgroundTint="#83CABF"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Movie Title"
+            android:textAlignment="gravity"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:srcCompat="@tools:sample/avatars"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMBD Rating: "
+                android:textSize="25sp"/>
+            <RatingBar
+                android:id="@+id/imbdRateBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:numStars="5"
+                android:stepSize=".5"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Rated: "
+                android:layout_gravity="bottom"/>
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:text="Year: "
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:text="Run Time: "
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:text="Genre: "
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:text="Link to IMDB page:"
+            android:textSize="25sp"
+            android:autoLink="web" />
+
+
+    </LinearLayout>
+
+</layout>

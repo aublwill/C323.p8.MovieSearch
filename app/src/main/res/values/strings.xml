@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">C323p8MovieSearch</string>
+    <string name="year">Year: %s</string>
+    <string name="runTime">Run Time: %s</string>
+    <string name="genre">Genre: %s</string>
+    <string name="link">Link to IMDB page: \n
+        https://www.imdb.com/title/%s</string>
+</resources>
